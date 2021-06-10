@@ -1,0 +1,86 @@
+ *{
+	box-sizing: border-box;
+	
+	}
+	body{margin:0;
+	width:100%;
+	height:100%;
+	background-color:#a2bbcf;}
+
+        ul{
+            display: none;
+        }
+
+        div{border:3px black solid;
+	margin:5px;
+	padding: 5px;
+        border-radius:15px;
+	/*box-shadow: 10px 10px 16px #000000;*/
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+        
+        div input,button,h2{
+        margin:5px;
+	padding: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius:5px;}
+        
+        p{display: inline;padding: 5px;}
+
+        ol li{border:1px blue solid;
+            border-radius:5px;
+            width:100%;
+            padding: 5px;  
+        }
+
+        .table{background-color: #EFD3D7;
+	border: thin solid navy;
+        color:black;}
+
+	footer{ position:absolute;
+		bottom:0;
+		right:35%;
+		text-align:center;
+		border-top:1px grey solid;
+		}
+/*---------------------------------------------*/
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  background-color: #F0F7F4; /*#DEE2FF;*/
+  padding: 15px;
+}
+.column .less{width: 10%;}
+.column .med{width: 25%;}
+.column .more{width: 50%;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+ 
+}
+
+.row{  display: flex;
+  flex-wrap: wrap;
+  background-color: #FEEAFA; /*#f1f1f1;*/
+  justify-content:space-around
+  }
+
+.header{text-align:center;
+	background-color:#00C8FF;}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+/*--------------------------------------------------------*/
