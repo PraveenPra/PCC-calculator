@@ -1,9 +1,9 @@
 function show(){
-      document.getElementById("tab").style.display="block";
+   /*when you press the table, it will show up or else it remains hidden  */ document.getElementById("tab").style.display="block";
   } 
   
     
-//cal and clear------------------------------  
+//to calucate and clear the screen------------------------------  
 var cal=document.querySelector('#cal');
         
 var clear=document.querySelector('#clear');
@@ -19,7 +19,7 @@ var edit3 =document.querySelector('#edit3');
 var edit4 =document.querySelector('#edit4');
 var edit5 =document.querySelector('#edit5');
 
-//----------edit monthly min---------------------
+//----------edit table values and display them. NOTE: edited values are not yet used in the formula. old values are still in use---------------------
  edit.addEventListener('click',()=>{
   monthlyminimum = prompt("enter monthly minimum");
  var span1=document.querySelector('#m11');
@@ -112,7 +112,7 @@ cal.addEventListener('click',()=>{
     //total cal
     var total=(unitcharge+tax+fac+rent+gst);
     
-    //-------------display op------------------------
+    //-------------display the calculated result------------------------
         var liuc=document.createElement('li');
         liuc.innerHTML="unit charge = "+unitcharge.toFixed(2)+"  ||  "+uctext;
         

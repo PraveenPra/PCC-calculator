@@ -1,53 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+				
 <head>
 <title>Pcc calculator</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="index.css">
-    </head>
+ </head>
+ 
 <body>
 <div class="header">
   <h1>PCC CALCULATOR</h1>
 </div>
-
+<!-- this is main table which hold the tariff rates -->
 <div class="row">
-  <div class="column less">
-     <h2 class="table" onclick="show();">Table</h2>
-	
-	<ul id="tab" >
-   
+ <div class="column less">
+ <h2 class="table"onclick="show();">Table</h2>	
+					<ul id="tab" >
     <li>monthly min :<span id="m11"> 900</span> | weekly min = <span id="m11a">225</span>
+ <!-- the edits are not applied to the formula yet -->
 	<button id="edit">E</button></li>
+	
      <li>tax :  => <span id="m22">0.99</span><button id="edit1">E</button></li>
+     
      <li>fac : <span id="m33">0.08</span><button id="edit2">E</button></li>
+     
      <li>monthly rent :<span id="m44" >300</span> | weekly rent =<span id="m44a">75</span><button id="edit3">E</button></li>
+     
      <li>monthly gst :<span id="m55"> 56</span> | weekly gst =<span id="m55a">14</span><button id="edit4">E</button></li>
+     
     <li>unit charge : <span id="m66">11</span>rs<button id="edit5">E</button></li>
        
  </ul>
 </div>
+<!-- this is where you input the sanctioned load for a given number of days for the consumed units -->
     <div class="column med">
         <h2 class="table">Enter the input values</h2>
         <p><b>KW_ :</b></p><input type="number" id="kw"><br>
         <p><b>Days :</b></p><input type="number" id="day"><br>
         <p><b>units :</b></p><input type="number" id="unit"><br>
-    <button id="cal"><b>calculate</b></button >
-    <button id="clear"><b>clear</b></button>
-        </div>
+        <button id="cal"><b>calculate</b></button >
+        <button id="clear"><b>clear</b></button>
+   </div>
+   <!-- here there calculated value is displayed -->
 <div class="column more">
  <ol><h2>Answer</h2> </ol> 
 </div>
 </div> 
 <div class="footer">
 
-copyright &copy;2021 <i>by Manikanta.L (NS103)</i>
+<p>copyright &copy;2021 <i>by Manikanta</i></p>
  
 </div>
-<script src="index.js">
-     
-</script>
-      
+<script src="index.js"></script>     
 </body>
-
 </html>
